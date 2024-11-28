@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Hemsida</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        div {
+            background-color: gray;
+            width: 100%;
+            height: 50px;
+            align-content: center;
+            vertical-align: bottom;
+        }
+        
+        .bilder {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+            gap: 30px;
+        }
+        
+        .bilder img {
+            max-width: 300px;
+            max-height: 200px;
+            border: 2px solid #333;
+            border-radius: 5px;
+        }
+        
+        .bilder2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+            gap: 50px;
+        }
+        
+        .bilder2 img {
+            max-width: 600px;
+            max-height: 400px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            position: absolute;
+        }
+        
+        .text p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+            padding: 10px 20px 10px 10px;
+            width: 90%;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .te p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+            padding: 10px 20px 10px 10px;
+            width: 90%;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            bottom: auto;
+        }
+    </style>
+    <script>
+        img = document.getElementById("img1");
+
+        function enlargeImg() {
+            img.style.transform = "scale(1.5)";
+            img.style.transition = "transform 0.25s ease";
+        }
+
+        // Function to reset image size
+        function resetImg() {
+            img.style.transform = "scale(1)";
+            img.style.transition = "transform 0.25s ease";
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Gentlemanens delikates</h1>
+    </header>
+    <section class="bilder">
+        <!-- Lägg till bilder genom att ersätta URLerna nedan -->
+        <img onclick="enlargeImg()" id="img1" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.whitehouse.gov%2Fwp-content%2Fuploads%2F2021%2F01%2F44_barack_obama.jpg&f=1&nofb=1&ipt=556c49bb155e24baffe77b61c770cf7e0a2508194099f5e161efc7ccf111a9bb&ipo=images"
+            alt="Bild 1">
+
+        <img src=https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.whitehouse.gov%2Fwp-content%2Fuploads%2F2021%2F01%2F44_barack_obama.jpg&f=1&nofb=1&ipt=556c49bb155e24baffe77b61c770cf7e0a2508194099f5e161efc7ccf111a9bb&ipo=images alt="Bild 2 ">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.whitehouse.gov%2Fwp-content%2Fuploads%2F2021%2F01%2F44_barack_obama.jpg&f=1&nofb=1&ipt=556c49bb155e24baffe77b61c770cf7e0a2508194099f5e161efc7ccf111a9bb&ipo=images
+            " alt="Bild 3 ">
+
+    </section>
+    <section class="text ">
+        <p>
+            Är du en gentleman/kvinna som vill göra nästa finmidag eller rävjakt speciel? Använd i så fall våran ekologiska svenska surströmming med flertal sofistikerad smakar för den exlenta njutaren
+        </p>
+    </section>
+    <section class="bilder2 ">
+        <img id="bild1" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.whitehouse.gov%2Fwp-content%2Fuploads%2F2021%2F01%2F44_barack_obama.jpg&f=1&nofb=1&ipt=556c49bb155e24baffe77b61c770cf7e0a2508194099f5e161efc7ccf111a9bb&ipo=images
+            alt=" Bild 1 id="bild1 ">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.whitehouse.gov%2Fwp-content%2Fuploads%2F2021%2F01%2F44_barack_obama.jpg&f=1&nofb=1&ipt=556c49bb155e24baffe77b61c770cf7e0a2508194099f5e161efc7ccf111a9bb&ipo=images" alt="Bild 2 ">'
+        <section class="text " id="te ">
+            <p>
+                Som en sann gentleman skulle säga, är det inte bara smaken som gör surströmming till vad det är – nej, det är hela kontexten. Det börjar med burken, som öppnas varsamt utomhus, helst med havsbrisen som en elegant kamrat för att dämpa doften som är både
+                känd och beryktad. Doften, kära vän, är som ett brutet löfte – oväntad men ändå ärlig. Den varnar dig för vad som komma skall, men om du vågar stanna kvar, belönar den dig med en smakupplevelse utöver det vanliga. Tillbehören är lika viktiga
+                som fisken själv. Tunnbröd, smör, mandelpotatis och en klick gräddfil spelar sina roller som hovmästare till denna kungliga rätt. Att äta surströmming är ett test i balans och mod. En gentleman vet att uppskatta det komplexa spelet mellan
+                sälta, syra och den unika fermenterade smaken. Det är som att dansa på en knivsegg av njutning och provokation. Men det är också en social akt – en hyllning till gemenskap och historia, där historier berättas och skratt delas över en enkel
+                men raffinerad måltid. Så, kära vän, nästa gång du hör någon fnysa åt surströmming, minns att det är inte bara en fisk i en burk. Det är kultur, tradition, och en gentlemans utmaning att möta och omfamna det okonventionella med stil. Skål
+                för surströmmingen – kung av kontrovers och herre av smakens mest djärva territorium!
+            </p>
+        </section>'
+
+    </section>
+    <div class="div "></div>
+</body>
+
+</html>
